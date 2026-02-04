@@ -1,0 +1,256 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color : #fff;
+    --text : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #151515;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 8px;
+    font-family: var(--text);
+    position: sticky;
+    top: 10px;
+}
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+}
+
+nav div button{
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.signin{
+    background-color: #000 ;
+    color: white;
+}
+
+.download{
+    background-color: #fff;
+    color: black;
+}
+
+nav div a:hover{
+    color: #c9c6c6;
+}
+
+nav div button:hover{
+    color: #c9c6c6;
+}
+
+main div{
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px 20px;
+    color: #fff;
+
+}
+
+.sec-3{
+    display: flex;
+    justify-content: center;
+}
+
+main p{
+    color: #504d4d;
+    font-size: 20px;
+    font-family: var(--text);
+}
+
+main h3{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 40px;
+    font-family: var(--text);
+}
+
+main div div{
+    width: 100%;
+}
+
+
+main div div button{
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+main div button:hover{
+    color: #c9c6c6;
+}
+
+.container{
+    background-color: #232222;
+    display: flex;
+    width: 90%;
+    height: 100%;
+}
+
+img{
+    border-radius: 8px;
+
+}
+
+.sub {
+    color: #dad6d6;
+    font-family: var(--text);
+    font-display: block;
+    font-size: 30px;
+}
+
+.para{
+    color: #858383;
+    font-family: var(--text);
+    font-display: block;
+    font-size: 26px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: var(--text);
+    font-size: medium;
+}
+
+.card{
+    background-color: #232222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 90%; 
+    color: #5c5757;
+}
+
+
+.companies{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: var(--text);
+    font-size: medium;
+}
+
+.creators{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: var(--text);
+    font-size: 30px;
+}
+
+.card-footer{
+    display: flex;
+}
+
+
+
+
+.testimonials .grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+
+.testimonials .grid .card {
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+  
+}
+
+.quote {
+  color: #eaeaea;
+  font-size: 16px;
+}
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  
+}
+
+.author h4 {
+  color: #fff;
+  font-size: 14px;
+  
+}
+
+.author span {
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.blog .grid{
+    max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.blog .grid .card {
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+  
+}
+
+.highlights .grid .card{
+    max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
