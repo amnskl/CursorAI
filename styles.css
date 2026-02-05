@@ -121,14 +121,14 @@ img{
     color: #dad6d6;
     font-family: var(--text);
     font-display: block;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .para{
     color: #858383;
     font-family: var(--text);
     font-display: block;
-    font-size: 26px;
+    font-size: 22px;
 }
 
 .grid{
@@ -154,7 +154,7 @@ img{
 .companies{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 5px;
+    /* gap: 5px; */
     max-width: 1400px;
     margin: 0 auto;
     font-family: var(--text);
@@ -203,6 +203,7 @@ img{
   color: #eaeaea;
   font-size: 16px;
 }
+
 .author {
   display: flex;
   align-items: center;
@@ -213,13 +214,11 @@ img{
   width: 40px;
   height: 40px;
   border-radius: 8px;
-  
 }
 
 .author h4 {
   color: #fff;
   font-size: 14px;
-  
 }
 
 .author span {
@@ -246,11 +245,96 @@ img{
   
 }
 
-.highlights .grid .card{
+.highlights .grid .sec-1{
     max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  gap: 10px;
+  grid-template-rows: 1fr,2fr,1fr ;
+  /* gap: 10px; */
 }
 
+
+.join{
+  border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+
+.footer {
+  background: radial-gradient(circle at top, #1a1a1a 0%, #0d0d0d 60%);
+  color: #d1d5db;
+  padding: 60px 80px 30px;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 60px;
+  margin-bottom: 50px;
+}
+
+.footer-col h4 {
+  color: #9ca3af;
+  font-size: 14px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.footer-col a {
+  display: block;
+  color: #f3f4f6;
+  text-decoration: none;
+  margin-bottom: 12px;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #262626;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-btn {
+  background: #1f1f1f;
+  border: 1px solid #2a2a2a;
+  color: #e5e7eb;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  background: #2a2a2a;
+}
+
+.lang-select {
+  background: #1f1f1f;
+  color: #e5e7eb;
+  border: 1px solid #2a2a2a;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
