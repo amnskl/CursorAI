@@ -7,11 +7,24 @@
 
 :root{
     --text-color : #fff;
-    --text : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --text : sans-serif;
+    
 }
 
 body{
-    background-color: #151515;
+    background-color: #14120b;
+}
+
+header{
+      position: sticky;
+      top: 0px;
+      margin: 0px ;
+      padding: 0px 20px;
+      background-color: #14120b;
+}
+
+strong{
+  font-weight: 400;
 }
 
 nav{
@@ -19,14 +32,15 @@ nav{
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    margin: 20px auto;
-    padding: 10px 20px;
+    margin: 0px auto;
+    padding: 0px 20px;
     color: #fff;
     border-radius: 8px;
     font-family: var(--text);
-    position: sticky;
-    top: 10px;
+    font-weight: var(--text-weight);
+
 }
+
 
 
 a{
@@ -46,11 +60,24 @@ nav div button{
 .signin{
     background-color: #000 ;
     color: white;
+    border: 1px solid gray;
+    padding: 5.6px 10.5px 5.88px;
 }
 
 .download{
     background-color: #fff;
     color: black;
+     border: 1px solid gray;
+    padding: 5.6px 10.5px 5.88px;
+}
+
+.download-xx{
+  background-color: #fff;
+    color: black;
+    font-size: 16px;
+    border-radius: 30px;
+     border: 1px solid gray;
+    padding: 12.48px 21.6px 12.8px;
 }
 
 nav div a:hover{
@@ -70,9 +97,23 @@ main div{
 
 }
 
-.sec-3{
+.highlights .grid .sec-1{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.highlights .grid .card{
+  padding-top: 0px;
+}
+
+.sec-3 p{
     display: flex;
     justify-content: center;
+    color: #fff;
+    font-size:16px;
+    font-family: var(--text);
 }
 
 main p{
@@ -106,7 +147,7 @@ main div button:hover{
 }
 
 .container{
-    background-color: #232222;
+    background-color: #1b1913;
     display: flex;
     width: 90%;
     height: 100%;
@@ -118,11 +159,21 @@ img{
 }
 
 .sub {
-    color: #dad6d6;
+    color: #edecec;
     font-family: var(--text);
     font-display: block;
-    font-size: 25px;
+    font-size: 22px;
+    padding-bottom: 6px;
 }
+
+.grid .card .sub{
+  color: #edecec;
+    font-family: var(--text);
+    font-display: block;
+    font-size: 18px;
+    padding-bottom: 6px;
+}
+
 
 .para{
     color: #858383;
@@ -130,6 +181,58 @@ img{
     font-display: block;
     font-size: 22px;
 }
+
+.grid .card .para{
+  color: #858383;
+    font-family: var(--text);
+    font-display: block;
+    font-size: 18px;
+}
+
+.grid .card{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.grid .card .image{
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.blog .grid .card .para{
+  color: #858383;
+    font-family: var(--text);
+    font-display: block;
+    font-size: 18px;
+}
+
+.blog .grid .card .sub{
+  color: #edecec;
+    font-family: var(--text);
+    font-display: block;
+    font-size: 18px;
+    padding-bottom: 6px;
+}
+
+.blog .grid .card{
+  
+}
+
+.highlights .grid .card .sub{
+  color: #edecec;
+    font-family: var(--text);
+    font-display: block;
+    font-size: 18px;
+    padding-bottom: 6px;
+}
+
+.highlights .grid .card .para{
+  color: #858383;
+    font-family: var(--text);
+    font-display: block;
+    font-size: 18px;
+}
+
 
 .grid{
     display: grid;
@@ -151,12 +254,11 @@ img{
 }
 
 
-.companies{
+.companies {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    /* gap: 5px; */
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 0 90px;
     font-family: var(--text);
     font-size: medium;
 }
@@ -178,7 +280,6 @@ img{
 
 
 
-
 .testimonials .grid {
   max-width: 1200px;
   margin: 0 auto;
@@ -190,12 +291,13 @@ img{
 
 .testimonials .grid .card {
   border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 16px;
-  
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 220px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
   
 }
 
@@ -208,6 +310,8 @@ img{
   display: flex;
   align-items: center;
   gap: 12px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .author img {
@@ -216,14 +320,16 @@ img{
   border-radius: 8px;
 }
 
-.author h4 {
+.author p {
   color: #fff;
   font-size: 14px;
+  font-family: var(--text);
 }
 
 .author span {
   color: #9ca3af;
   font-size: 13px;
+  font-family: var(--text);
 }
 
 .blog .grid{
@@ -235,24 +341,52 @@ img{
 }
 
 .blog .grid .card {
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 16px;
-  
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 220px;
+  min-height: 120px;
   
 }
 
-.highlights .grid .sec-1{
+.highlights .grid div a{
+  min-height: 300px;
+}
+
+
+.highlights .grid div a div{
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.highlights .grid {
     max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 1fr,2fr,1fr ;
-  /* gap: 10px; */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: var(--text);
+    font-size: medium;
 }
 
+.download-yy{
+  text-align: center;
+  justify-content: center;
+   background-color: #fff;
+    color: black;
+    font-size: 16px;
+    border-radius: 30px;
+     border: 1px solid gray;
+    padding: 12.48px 21.6px 12.8px;
+    margin-left: ;
+}
 
 .join{
   border: none;
@@ -264,10 +398,9 @@ img{
 
 
 .footer {
-  background: radial-gradient(circle at top, #1a1a1a 0%, #0d0d0d 60%);
+  background: #1b1913;
   color: #d1d5db;
-  padding: 60px 80px 30px;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: var(--text);
 }
 
 .footer-container {
